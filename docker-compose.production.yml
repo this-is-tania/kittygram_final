@@ -22,7 +22,7 @@ services:
   frontend:
     env_file: .env
     image: heyitstania/kittygram_frontend
-    command: cp -r /kittygram/build/. /frontend_static/
+#    command: cp -r /kittygram/build/. /frontend_static/
     volumes:
       - static:/frontend_static
   gateway:
