@@ -16,19 +16,19 @@ services:
     image: heyitstania/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static/
-      - media:/app/media/
+      - static:/backend_static
+      - media:/media
   frontend:
     env_file: .env
     image: heyitstania/kittygram_frontend
-    command: cp -r /app/build/. /static/
+    command: cp -r /app/build/. /frontend_static/
     volumes:
-      - static:/static
+      - static:/frontend_static
   gateway:
     image: heyitstania/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
     volumes:
-      - static:/static
-      - media:/app/media/
+      - static:/staticfiles
+      - media:/media
