@@ -20,8 +20,8 @@ services:
     depends_on:
       - db
   frontend:
-    env_file: .env
     image: heyitstania/kittygram_frontend
+    env_file: .env
 #    command: cp -r /kittygram/build/. /frontend_static/
     volumes:
       - static:/frontend_static
