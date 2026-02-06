@@ -18,6 +18,8 @@ services:
     volumes:
       - static:/backend_static
       - media:/media
+    depends_on:
+      - db
   frontend:
     env_file: .env
     image: heyitstania/kittygram_frontend
