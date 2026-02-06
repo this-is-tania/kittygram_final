@@ -1,5 +1,5 @@
 FROM node:18
-WORKDIR /app
+WORKDIR /kittygram
 
 COPY package.json package.json
 COPY package-lock.json package-lock.json
