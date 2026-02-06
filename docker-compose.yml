@@ -18,6 +18,8 @@ services:
     volumes:
       - static:/static/
       - media:/app/media/
+    ports:
+      - "9000:9000"
   frontend:
     env_file: .env
     build: ./frontend/
