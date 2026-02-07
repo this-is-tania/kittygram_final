@@ -19,8 +19,6 @@ services:
       - media:/app/media
     depends_on:
       - db
-    ports:
-      - "9000:9000"
   frontend:
     env_file: .env
     image: heyitstania/kittygram_frontend:latest
