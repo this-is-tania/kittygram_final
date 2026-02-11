@@ -59,3 +59,9 @@ POSTGRES_USER=kittygram_user
 POSTGRES_PASSWORD=kittygram_password
 DB_NAME=kittygram
 ```
+
+# Автор
+
+Таня Малаховская
+
+[GitHub](https://github.com/this-is-tania)
